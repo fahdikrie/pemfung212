@@ -1,6 +1,6 @@
 {-
-Reference:
-    > https://www.geeksforgeeks.org/check-whether-triangle-valid-not-sides-given/
+    Reference:
+        > https://www.geeksforgeeks.org/check-whether-triangle-valid-not-sides-given/
 -}
 
 isTriangle :: Int -> Int -> Int -> [Char]

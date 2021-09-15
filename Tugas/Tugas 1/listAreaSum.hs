@@ -5,15 +5,16 @@
         > https://stackoverflow.com/questions/8879391/how-do-i-convert-string-into-list-of-integers-in-haskell
 -}
 
-listSum :: [Int] -> Int
-listSum [] = 0
-listSum (x:t) = x + listSum t
+listCircleAreasSum :: [Int] -> Int
+listCircleAreasSum [] = 0
+listCircleAreasSum (x:t) = x + listSum t
 
 seqOfStringToInt :: String -> [Int]
 seqOfStringToInt seq = map read $ words seq
 
 main:: IO()
 main = do
+    putStrLn "Insert the circle Areas you want to sum (separated by whitespace): "
     seq <- getLine
-    let listOfInt = seqOfStringToInt seq
-    print $ listSum listOfInt
+    let listOfCircleAreas = seqOfStringToInt seq
+    print $ listCircleAreasSum listOfCircleAreas
