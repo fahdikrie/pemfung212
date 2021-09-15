@@ -1,9 +1,11 @@
 {-
-    Reference:
+    References:
         > https://stackoverflow.com/questions/5952167/how-do-i-print-a-list-in-haskell
         > https://stackoverflow.com/questions/26847192/reverse-a-list-in-haskell/26847373
         > https://stackoverflow.com/questions/40934263/haskell-generic-type-to-generic-and-int
 -}
+
+-- Masih bingung bikin genericnya gimana
 
 -- data IList =
 --     I Int
