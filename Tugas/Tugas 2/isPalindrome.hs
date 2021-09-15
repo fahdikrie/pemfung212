@@ -1,3 +1,10 @@
+{-
+    References:
+        > https://stackoverflow.com/questions/30242668/remove-characters-from-string-in-haskell
+        > https://codereview.stackexchange.com/questions/24340/palindrome-test-in-haskell
+        > https://stackoverflow.com/questions/3098877/remove-white-space-from-string
+-}
+
 import Data.Char
 
 isPalindrome :: String -> Bool
