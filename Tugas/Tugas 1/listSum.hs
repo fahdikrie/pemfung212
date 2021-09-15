@@ -14,6 +14,7 @@ seqOfStringToInt seq = map read $ words seq
 
 main:: IO()
 main = do
+    putStrLn "Insert Int list items you want to sum (separated by whitespace): "
     seq <- getLine
     let listOfInt = seqOfStringToInt seq
     print $ listSum listOfInt
