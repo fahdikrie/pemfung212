@@ -1,8 +1,3 @@
-{-
-    Reference:
-        > https://stackoverflow.com/questions/29943390/how-would-i-write-a-triangle-function-recursively
--}
-
 triangular :: Int -> Int
 triangular 0 = 0
 triangular n = n + triangular (n-1)
