@@ -1,3 +1,8 @@
+{-
+    Reference:
+        > https://www.some.ox.ac.uk/wp-content/uploads/2019/08/HaskellTutorial.pdf
+-}
+
 -- let power 0 f = (\x->x);
 -- power n f = f.(power (n-1) f)
 --     in (power 2 (\x -> x + 1)) 2
