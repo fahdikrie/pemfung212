@@ -40,6 +40,17 @@ sumEven (x:xs)
     | otherwise        = 0 + sumEven xs
 
 -- No. 5 — Kalkulator Investasi
-invest :: Integer -> Integer -> Integer
-invest nom inv 0 = 0
-invest nom inv dur = nom + (nom * (1 + 3%)) + invest nom inv (dur-1)
+invest :: Double -> Double -> Double -> Double
+-- invest nom inv dur = nom + interest (nom * (1+inv/100)) (inv/100) (dur-1)
+invest nom inv dur = interest nom inv dur
+
+interest :: Double -> Double -> Double -> Double
+interest nom inv 0 = nom
+interest nom inv 1 = interest (nom * (1+inv)) inv 0
+interest nom inv dur = nom + interest (nom * (1+inv)) inv (dur-1)
+-- interest nom inv 1 = (1+inv)
+-- interest nom inv dur = interest nom inv (dur-1) * (1+inv) * nom
+-- interest nom inv 1 =  (nom * (1+inv)) + interest nom inv 0
+-- interest nom inv dur =  ((nom * (1+inv)) + nom) * interest
+-- interest nom inv 1 =  interest (nom * (1+inv)) inv 0 + nom
+-- interest nom inv dur =  interest (nom * (1+inv)) inv (dur-1) + nom
