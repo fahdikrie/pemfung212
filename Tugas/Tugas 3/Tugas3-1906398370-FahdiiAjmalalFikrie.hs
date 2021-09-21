@@ -40,3 +40,6 @@ sumEven (x:xs)
     | otherwise        = 0 + sumEven xs
 
 -- No. 5 — Kalkulator Investasi
+invest :: Integer -> Integer -> Integer
+invest nom inv 0 = 0
+invest nom inv dur = nom + (nom * (1 + 3%)) + invest nom inv (dur-1)
