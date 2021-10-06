@@ -4,6 +4,7 @@
         2. https://mmhaskell.com/blog/2018/1/15/need-to-be-faster-be-lazy
         3. https://stackoverflow.com/questions/50145509/pascal-triangle-in-haskell-nested-lists
         4. https://programmingpraxis.com/2011/08/30/hamming-numbers/
+        5. Diajarin Alif yang no. 3
 -}
 
 -- No. 1 — Generasi bilangan prima menggunakan algo. Sieve of Eratosthenes
@@ -44,5 +45,5 @@ hammingNumbers = 1 : merge hN2 (merge hN3 hN5) where
                 hN5 = map (*5) hammingNumbers
 
 -- No. 5 — Pascal Triangle
-pascal_infinite :: [[Integer]]
-pascal_infinite = [1] : map (\l -> zipWith (+) (l ++ [0]) (0:l)) pascal_infinite
+pascalInfinite :: [[Integer]]
+pascalInfinite = [1] : map (\l -> zipWith (+) (l ++ [0]) (0:l)) pascalInfinite
