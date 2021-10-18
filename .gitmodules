@@ -1,0 +1,3 @@
+[submodule "UTS/Parser Combinator Essay/parsing-with-haskell-parser-combinators"]
+	path = UTS/Parser Combinator Essay/parsing-with-haskell-parser-combinators
+	url = git@github.com:fahdikrie/parsing-with-haskell-parser-combinators.git
